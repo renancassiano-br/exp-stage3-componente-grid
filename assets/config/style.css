@@ -3,3 +3,41 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+:root {
+  font-size: 62.5%;
+
+  /* 
+  # Definição de váriaveis. Usa as variáveis e depois troca só em um local. 
+  # Sintaxe criaação: --nome_variavel: valor; 
+  # (Igual colocaria ao definir em um elemento a mesma propriedade)
+  */
+  --ff-main: 'Epilogue', sans-serif;
+  --bg-main: #28293E;
+  --bg-span: white;
+  --tc-header: #BBB3E6;
+  --tc-main: white; 
+  --tc-span: #090039;
+
+}
+
+body {
+  font-size: 1.6rem;
+  /* 
+  # Uso da variável criada para a fonte principal. 
+  # sintaaxe: propriedade: var(--nome_variavel);
+   */
+  font-family: var(--ff-main);
+  background: var(--bg-main);
+  color: var(--tc-main);
+}
+
+p
+, span {
+  font-weight: 400;
+}
+
+h1 
+, h2 {
+  font-weight: 800;
+}
