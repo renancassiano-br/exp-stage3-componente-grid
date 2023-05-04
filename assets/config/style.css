@@ -13,11 +13,12 @@
   # (Igual colocaria ao definir em um elemento a mesma propriedade)
   */
   --ff-main: 'Epilogue', sans-serif;
-  --bg-main: #28293E;
-  --bg-span: white;
-  --tc-header: #BBB3E6;
-  --tc-main: white; 
-  --tc-span: #090039;
+
+  /* A escolha da corprincipal */
+  --hue: 250; 
+  --bg-main: hsl(var(--hue), 22%, 20%); 
+  --tc-main: hsl(var(--hue), 0%,100%); 
+  --tc-secondary: hsl(var(--hue), 50%, 80%);
 
 }
 
@@ -26,10 +27,31 @@ body {
   /* 
   # Uso da variável criada para a fonte principal. 
   # sintaaxe: propriedade: var(--nome_variavel);
-   */
+  */
   font-family: var(--ff-main);
-  background: var(--bg-main);
+  background-color: var(--bg-main);
   color: var(--tc-main);
+}
+
+.page {
+  margin: 0 auto;
+  max-width: 80%;
+}
+
+header{
+  text-align: center;
+  margin: 10.5rem auto 8rem;
+}
+
+header p {
+  color: var(--tc-secondary);
+  letter-spacing: 3px;
+  line-height: 3.2rem;
+  /* text-transform: uppercase; */
+}
+
+header h1 {
+  margin-top: 1.7rem;
 }
 
 p
