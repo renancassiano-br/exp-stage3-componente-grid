@@ -19,7 +19,6 @@
   --bg-main: hsl(var(--hue), 22%, 20%); 
   --tc-main: hsl(var(--hue), 0%,100%); 
   --tc-secondary: hsl(var(--hue), 50%, 80%);
-
 }
 
 body {
@@ -52,6 +51,8 @@ header p {
 
 header h1 {
   margin-top: 1.7rem;
+  font-size: 4rem;
+  line-height: 4.8rem;
 }
 
 p
