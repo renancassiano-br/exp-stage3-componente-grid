@@ -34,7 +34,11 @@ body {
 
 .page {
   margin: 0 auto;
-  max-width: 80%;
+  max-width: 33rem;
+}
+
+img {
+  width: 100%;
 }
 
 header{
