@@ -68,3 +68,19 @@ h1
 , h2 {
   font-weight: 800;
 }
+
+.card {
+  position: relative;
+}
+
+.card img {
+  height: 41.6rem;
+  object-fit: cover;
+}
+
+.card h2 {
+  position: absolute;
+  z-index: 1;
+  bottom: 5.1rem;
+  left: 2.8rem;
+}
